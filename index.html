@@ -1,81 +1,105 @@
 <!DOCTYPE html>
-<html lang="bg"><meta name="google-site-verification" content="0xoF6bPu7-hno48aBUnfvvBQZ2YJ2SxrRjmZ_6tv0k4" />
+<html lang="bg">
 <head>
-<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Аниматори - Детство на макс</title>
-  <meta name="description" content="Аниматори за детски партита в София и околностите – Детство на макс!" />
-  <meta name="keywords" content="аниматори, детски партита, София, рожден ден, балони, забавление" />
-  <meta name="author" content="Аниматори - Детство на макс" />
+  <title>Аниматори - Детство на макс | Почасови детски партита в София</title>
+  <meta name="description" content="Организиране на почасови детски партита с аниматори в София и околните села. Весело детство на макс!" />
+  <meta name="google-site-verification" content="0xoF6bPu7-hno48aBUnfvvBQZ2YJ2SxrRjmZ_6tv0k4" />
   <style>
     body {
-      background: linear-gradient(135deg, #f9c6c9, #fbe8a6);
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      color: #4b3e57;
+      background: #FFF8E7 url('https://i.imgur.com/1E4w7Uq.png') no-repeat top right;
+      background-size: 200px 200px;
+      margin: 0; padding: 20px;
+      color: #333;
+    }
+    header {
       text-align: center;
-      padding: 40px;
+      margin-bottom: 30px;
     }
-    h1 {
+    header h1 {
       font-size: 3em;
-      margin-bottom: 10px;
-      color: #e94e77;
-      text-shadow: 2px 2px 4px #fff;
+      color: #FF4081;
+      margin-bottom: 0;
+      text-shadow: 1px 1px 3px #aaa;
     }
-    p {
-      font-size: 1.2em;
+    header p {
+      font-size: 1.3em;
+      color: #555;
+      margin-top: 5px;
+    }
+    section.services {
+      background: #FFEBF5;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 4px 8px rgba(255, 64, 129, 0.3);
+    }
+    section.services h2 {
+      color: #E91E63;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    section.services ul {
+      list-style: none;
+      padding: 0;
+    }
+    section.services li {
+      background: #FFC1E3;
       margin: 10px 0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(255, 64, 129, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    .balloons {
+    section.services li span.emoji {
+      font-size: 1.5em;
+    }
+    section.contact {
+      text-align: center;
+      font-size: 1.2em;
       margin-top: 30px;
     }
-    .balloon {
-      display: inline-block;
-      width: 60px;
-      height: 80px;
-      margin: 0 10px;
-      background: radial-gradient(circle at 30% 30%, #ff6f91, #d81e5b);
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-      position: relative;
-      animation: float 4s ease-in-out infinite;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    section.contact strong {
+      color: #FF4081;
     }
-    .balloon:nth-child(2) {
-      background: radial-gradient(circle at 30% 30%, #ffcc5c, #ffb347);
-      animation-delay: 1s;
-    }
-    .balloon:nth-child(3) {
-      background: radial-gradient(circle at 30% 30%, #88d8b0, #3aa76d);
-      animation-delay: 2s;
-    }
-    .string {
-      width: 2px;
-      height: 40px;
-      background: #333;
-      position: absolute;
-      bottom: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 1px;
-    }
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #999;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <h1>Аниматори - Детство на макс</h1>
-  <p>Организираме почасови детски партита в София и околностите.</p>
-  <p>Телефон за контакти: <strong>0876800025</strong></p>
-  
-  <div class="balloons">
-    <div class="balloon"><div class="string"></div></div>
-    <div class="balloon"><div class="string"></div></div>
-    <div class="balloon"><div class="string"></div></div>
-  </div>
+  <header>
+    <h1>Аниматори - Детство на макс</h1>
+    <p>Почасови детски партита с много забавления в София и околните села</p>
+  </header>
+
+  <section class="services">
+    <h2>Нашите услуги</h2>
+    <ul>
+      <li><span class="emoji">🎈</span> Организиране на тематични детски партита</li>
+      <li><span class="emoji">🎉</span> Аниматори с игри и забавления</li>
+      <li><span class="emoji">🤹‍♂️</span> Клоуни, фокусници и балонено шоу</li>
+      <li><span class="emoji">🍰</span> Помощ с украса и торти</li>
+      <li><span class="emoji">📸</span> Фото сесии за незабравими спомени</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <p>Свържете се с нас на телефон <strong>0876800025</strong></p>
+    <p>Весело детство на макс – подарете незабравими моменти на вашето дете!</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Аниматори - Детство на макс
+  </footer>
 </body>
 </html>
