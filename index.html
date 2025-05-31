@@ -4,15 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Аниматори - Детство на макс</title>
-  
   <meta name="description" content="Аниматори за детски партита в София и околностите – Детство на макс!" />
   <meta name="keywords" content="аниматори, детски партита, София, рожден ден, балони, забавление" />
   <meta name="author" content="Аниматори - Детство на макс" />
-  
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9c6c9, #fbe8a6);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #4b3e57;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #e94e77;
+      text-shadow: 2px 2px 4px #fff;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .balloons {
+      margin-top: 30px;
+    }
+    .balloon {
+      display: inline-block;
+      width: 60px;
+      height: 80px;
+      margin: 0 10px;
+      background: radial-gradient(circle at 30% 30%, #ff6f91, #d81e5b);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: relative;
+      animation: float 4s ease-in-out infinite;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .balloon:nth-child(2) {
+      background: radial-gradient(circle at 30% 30%, #ffcc5c, #ffb347);
+      animation-delay: 1s;
+    }
+    .balloon:nth-child(3) {
+      background: radial-gradient(circle at 30% 30%, #88d8b0, #3aa76d);
+      animation-delay: 2s;
+    }
+    .string {
+      width: 2px;
+      height: 40px;
+      background: #333;
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 1px;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Добре дошли в Аниматори - Детство на макс!</h1>
+  <h1>Аниматори - Детство на макс</h1>
   <p>Организираме почасови детски партита в София и околностите.</p>
-  <p>Телефон за контакти: 0876800025</p>
+  <p>Телефон за контакти: <strong>0876800025</strong></p>
+  
+  <div class="balloons">
+    <div class="balloon"><div class="string"></div></div>
+    <div class="balloon"><div class="string"></div></div>
+    <div class="balloon"><div class="string"></div></div>
+  </div>
 </body>
 </html>
